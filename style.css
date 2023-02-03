@@ -1,0 +1,305 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;1,100;1,300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+header{
+    background-color: skyblue;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 130px;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.8em;
+}
+.navigation a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-left: 30px;
+
+}
+.navigation a:hover{
+    color: black;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(images/BK.JPG);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main h2{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span{
+   display: inline-block;
+   margin-top: 10px;
+    color: skyblue;
+    font-size: 2em;
+    font-weight: 400;
+}
+.main h3{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.typeclass::after{
+    content: "";
+    animation-name: typeskills;
+    animation-duration: 7s;
+    animation-iteration-count:infinite;
+}
+@keyframes typeskills{
+    0%{ content: "|"; }
+
+    4%{ content: "I B|";}
+    6%{ content: "I Bu|";}
+    8%{ content: "I Bui|";}
+    10%{ content: "I Buil|";}
+    12%{ content: "I Build|";}
+    14%{ content: "I Build w|";}
+    16%{ content: "I Build we|";}
+    18%{ content: "I Build web|";}
+    100%{ }
+}
+.main-btn{
+    color: white;
+    background-color: slateblue;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    margin-bottom: 40px;
+    transition:1s ease;
+    -webkit-transition:1s ease;
+    -moz-transition:1s ease;
+    -ms-transition:1s ease;
+    -o-transition:1s ease;
+}
+.main-btn:hover{
+    background-color: #0a49f6;
+    transform: scale(1.1 );
+    color: white;
+    -webkit-transform: scale(1.1 );
+    -moz-transform: scale(1.1 );
+    -ms-transform: scale(1.1 );
+    -o-transform: scale(1.1 );
+}
+.soical-icons a{
+    color: white;
+    font-size: 1.7em;
+    padding-right: 30px;
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: skyblue;
+    font-size: 2.2em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.content{
+    display:inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+.card{
+    display: flex;
+    background-color: white;
+    width:21%;
+    box-shadow:0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+    padding: 25px;
+    margin: 10px;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+}
+.card:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.icon{
+    color: skyblue;
+    font-size: 4em;
+    text-align: center;
+    
+}
+.info h3{
+        font-size: 2em;
+        font-weight: 700;
+    
+}
+.c1{
+    color:orangered;
+}
+.c2{
+    color: blue;
+}
+.c3{
+    color: purple;
+}
+.c4{
+    color:yellow;
+}
+.c5{
+    color: red;
+}
+.layer{
+    bottom: -50px;
+    left: 15px;
+    right: 15px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s, bottom 0.5s;
+    -webkit-transition: opacity 0.5s, bottom 0.5s;
+    -moz-transition: opacity 0.5s, bottom 0.5s;
+    -ms-transition: opacity 0.5s, bottom 0.5s;
+    -o-transition: opacity 0.5s, bottom 0.5s;
+}
+.item:hover .layer{
+    opacity: 1;
+    bottom: 15px;
+
+
+}
+.item{
+    cursor: pointer;
+}
+#boxContainer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+}
+#innerBox{
+     width: 50%;
+     height: 50%;
+     background-image: url(images/projects.png);
+     background-size: cover;
+     display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#innerBox i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.fix{
+    width: 100%;
+}
+.pp{
+    font-size: small;
+}
+.footer{
+    background-color: skyblue;
+    color: white;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: black;
+}
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1.6em;
+    }
+    section{
+        padding: 50px 15px;
+    }
+    .main-content h2 {
+        font-size: 1em;
+
+    }
+    .main-content h3 {
+        font-size: 1.6em;
+        
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:641)
+{
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.2em;
+    }
+    .main-content h3 {
+        font-size: 1.2em;
+        
+    }
+}
+@media (max-width:300px)
+{
+    body{
+        font-size: 10px;
+    }
+}
